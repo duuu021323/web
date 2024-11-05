@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>书香阁</title>
+    <style>
+        /* 添加你的CSS样式 */
+        /* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-info {
+    color: #666;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.recommendations, .new-arrivals {
+    padding: 20px;
+}
+
+.recommendations h2, .new-arrivals h2 {
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .book-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .book-item {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">书香阁</div>
+            <div class="search-bar">
+                <input type="text" placeholder="请输入书名或作者名">
+                <button>搜索</button>
+            </div>
+            <div class="contact-info">400-060-1500</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">读者活动</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">图书分类</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>你的气质里藏着你读过的书</h1>
+        </section>
+        <section class="recommendations">
+            <h2>好书推荐</h2>
+            <div class="book-list">
+                <div class="book-item">城南旧事</div>
+                <div class="book-item">心安即星归处</div>
+                <div class="book-item">小王子</div>
+                <!-- 更多书籍 -->
+            </div>
+        </section>
+        <section class="new-arrivals">
+            <h2>最新上架</h2>
+            <div class="book-list">
+                <div class="book-item">被讨厌的勇气</div>
+                <div class="book-item">苏菲的世界</div>
+                <div class="book-item">哲学科学常识</div>
+                <!-- 更多书籍 -->
+            </div>
+        </section>
+        <!-- 其他部分 -->
+    </main>
+    <footer>
+        <!-- 页脚内容 -->
+    </footer>
+</body>
+</html>
